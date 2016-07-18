@@ -1,0 +1,60 @@
+/*
+    @font face
+    Custom fonts setup
+*/
+
+@font-face {
+    font-family: "dynamo6bold";
+    src: url('../fonts/roboto-bold.woff2') format('woff2'),
+         url('../fonts/roboto-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "dynamo6light";
+    src: url('../fonts/roboto-light.woff2') format('woff2'),
+         url('../fonts/roboto-light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "dynamo6medium";
+    src: url('../fonts/roboto-medium.woff2') format('woff2'),
+         url('../fonts/roboto-medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "dynamo6regular";
+    src: url('../fonts/roboto-regular.woff2') format('woff2'),
+         url('../fonts/roboto-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+b, strong {
+    font-family: "dynamo6bold";
+    font-weight: bold;
+}
+
+/*
+    Text Selection
+    Custom highlight color of text to match theme of dynamo6
+*/
+
+::selection {
+    background: $dynamo-lime;
+    color:#ffffff;
+}
+
+::-moz-selection {
+    background: $dynamo-lime;
+    color:#ffffff;
+}

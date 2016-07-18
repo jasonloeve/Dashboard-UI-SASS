@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="favicon.ico">
+	<title> :: Timesheets</title>
+	<link href="stylesheets/app.css" rel="stylesheet">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<!-- Section here -->
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-3 hidden-sm hidden-xs col-side-wrapper">
+				<div class="row">
+					<div class="profile-bar">
+						<div class="profile-float">
+							<div class="profile-img-hold">
+								<button type="button" class="btn btn-primary btn-pop-edit">
+									<i class="glyphicon glyphicon-plus"></i>
+								</button>
+								<img src="images/profile.jpg" alt="..." class="center-block" height="130" width="130">
+							</div>
+						</div>
+					</div>
+					<div class="list-group-sidebar">
+						<div class="list-group">
+							<a href="#" class="list-group-item">
+								<i class="glyphicon glyphicon-only glyphicon-user"></i>&nbsp;&nbsp; My Profile
+							</a>
+							<a href="#" class="list-group-item">
+								<i class="glyphicon glyphicon-only glyphicon-calendar"></i>&nbsp;&nbsp; My Timesheets
+							</a>
+							<a href="#" class="list-group-item">
+								<i class="glyphicon glyphicon-only glyphicon-briefcase"></i>&nbsp;&nbsp; My Projects
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-9 pull-right">
+				<div class="row">
+					<div class="title-bar">
+						<i class="glyphicon glyphicon-calendar"></i> My Timesheets
+						<button type="button" class="btn btn-lg btn-primary pull-right btn-forward" data-toggle="modal" data-target="#myModal">
+							New Entry <i class="glyphicon glyphicon-plus"></i>
+						</button>
+					</div>
+				</div>
+				<div class="col-md-12">
+					<table class="table table-hover">
+						<thead>
+							<tr>
+								<th colspan="4"><h4>Friday 15 Jul</h4></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><strong>[10111] test project (new client)</strong></td>
+								<td>Marketing</td>
+								<td><strong>60:00</strong></td>
+								<td class="text-right">
+									<button type="button" class="btn btn-primary btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-edit"></span>
+									</button>
+									<button type="button" class="btn btn-danger btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-trash"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="td-extra-padding">
+									<strong>*note - </strong>
+									This project currently has no notes assigned to it.
+								</td>
+							</tr>
+							<tr>
+								<td><strong>[10111] test project (new client)</strong></td>
+								<td>Marketing</td>
+								<td><strong>60:00</strong></td>
+								<td class="text-right">
+									<button type="button" class="btn btn-primary btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-edit"></span>
+									</button>
+									<button type="button" class="btn btn-danger btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-trash"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="td-extra-padding">
+									<strong>*note - </strong>
+									Rapidiously brand high-payoff quality vectors for future-proof innovation. Authoritatively communicate out-of-the-box testing procedures without multidisciplinary mindshare. Professionally reintermediate dynamic convergence via.
+								</td>
+							</tr>
+							<tr>
+								<td><strong>[10111] test project (new client)</strong></td>
+								<td>Marketing</td>
+								<td><strong>60:00</strong></td>
+								<td class="text-right">
+									<button type="button" class="btn btn-primary btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-edit"></span>
+									</button>
+									<button type="button" class="btn btn-danger btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-trash"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="td-extra-padding">
+									<strong>*note - </strong>
+									Rapidiously brand high-payoff quality vectors for future-proof innovation. Authoritatively communicate out-of-the-box testing procedures without multidisciplinary mindshare. Professionally reintermediate dynamic convergence via.
+								</td>
+							</tr>
+							<tr>
+								<td><strong>[10111] test project (new client)</strong></td>
+								<td>Marketing</td>
+								<td><strong>60:00</strong></td>
+								<td class="text-right">
+									<button type="button" class="btn btn-primary btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-edit"></span>
+									</button>
+									<button type="button" class="btn btn-danger btn-sm">
+										<span class="glyphicon glyphicon-only glyphicon-trash"></span>
+									</button>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="4" class="td-extra-padding">
+									<strong>*note - </strong>
+									Rapidiously brand high-payoff quality vectors for future-proof innovation. Authoritatively communicate out-of-the-box testing procedures without multidisciplinary mindshare. Professionally reintermediate dynamic convergence via.
+								</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<th colspan="4" class="text-right"><h4><strong>Total hours: 300</strong></h4></th>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+				<!-- <div class="col-md-4">
+					<div id="datepicker01"></div>
+				</div>
+				<div class="col-md-4">
+					<div id="datepicker02"></div>
+				</div>
+				<div class="col-md-4">
+					<h3>Filter by client:</h3>
+					<form>
+						<div class="field-wrapper">
+							<input type="text" name="city" id="city" title="City" placeholder="City" autocomplete="off">
+							<label for="city">City</label>
+						</div>
+						<button type="submit" class="btn btn-default">Submit</button>
+					</form>
+					<button type="button" class="btn btn-block btn-default dropdown-toggle" data-toggle="dropdown">Scrollable Menu <span class="caret"></span></button>
+					<ul class="dropdown-menu scrollable-menu" role="menu">
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+						<li><a href="#">Something else here</a></li>
+						<li><a href="#">Action</a></li>
+						<li><a href="#">Another action</a></li>
+					</ul>
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<!-- Section here -->
+	<!-- Modal Section -->
+	<div class="modal fade" id="myModal" data-backdrop="static" data-keyboard="false">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h3 class="modal-title" id="myModalLabel">New Time Entry | Saturday, 16 Jul</h3>
+				</div>
+				<form>
+					<div class="modal-body">
+						<div class="field-wrapper">
+							<input type="text" name="city" id="city" title="City" placeholder="City" autocomplete="off">
+							<label for="city">City</label>
+						</div>
+						<div class="field-wrapper">
+							<input type="text" name="city" id="city" title="City" placeholder="City" autocomplete="off">
+							<label for="city">City</label>
+						</div>
+						<div class="row">
+							<div class="col-md-8">
+								<div class="field-wrapper">
+									<input type="text" name="city" id="city" title="City" placeholder="City" autocomplete="off">
+									<label for="city">City</label>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="field-wrapper">
+									<input type="text" name="city" id="city" title="City" placeholder="City" autocomplete="off">
+									<label for="city">City</label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="submit" class="btn btn-lg btn-primary btn-forward">
+							Save Entry <i class="glyphicon glyphicon-ok"></i>
+						</button>
+						<button type="button" class="btn btn-lg btn-default btn-forward" data-dismiss="modal">
+							Cancel <i class="glyphicon glyphicon-remove"></i>
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<!-- Modal Section -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="jquery/jquery-ui.js"></script>
+	<script src="jquery/bootstrap.min.js"></script>
+
+	<script>
+		$( function() {
+			$( "#datepicker01" ).datepicker({  maxDate: new Date });
+			$("#datepicker01 .ui-datepicker-month").before("From ");
+		} );
+
+		$( function() {
+			$( "#datepicker02" ).datepicker();
+			$("#datepicker02 .ui-datepicker-month").before("To ");
+		} );
+	</script>
+
+</body>
+</html>

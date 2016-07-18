@@ -1,0 +1,12 @@
+d6.sublime-project
+d6.sublime-workspace
+composer.json
+composer.lock
+test.php
+index.html
+Theme.html
+bower_components
+includes
+partials
+vendor
+harvest_api_config.json

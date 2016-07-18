@@ -1,0 +1,237 @@
+/*
+    Login page styling
+    Genaral element for the login page
+*/
+
+.full-wrapper {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    width: 100%;
+}
+
+.login-wrapper {
+    background-color: #ffffff;
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    width: 460px;
+    left: 60px;
+    height: 350px;
+    margin-top: -190px;
+    border: 1px solid #eeeeee;
+    -webkit-transition: all 0.333s;
+    transition: all 0.333s;
+    box-shadow: 0px 0px 15px 3px transparent;
+    &:hover {
+        -webkit-transform: translateY(-1px);
+        -moz-transform: translateY(-1px);
+        -ms-transform: translateY(-1px);
+        -o-transform: translateY(-1px);
+        transform: translateY(-1px);
+        box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.login-harvest-link {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    & svg {
+        fill: #b7b7b7;
+    }
+}
+
+/*
+    Global elements
+    wrappers, custom styling, holding areas
+*/
+
+.title-bar {
+    height: 80px;
+    padding: 12px 15px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    font-size: 30px;
+    line-height: 1.9;
+    color: #4c4c4c;
+    display: block;
+    text-transform: uppercase;
+}
+
+/* Fix left hand side col */
+
+.col-side-wrapper {
+    background-color: $dynamo-lime;
+    height: 100%;
+    position: fixed;
+}
+
+/*
+    Profile holder Global element
+    Side profile and navigation
+*/
+
+.profile-bar {
+    height: 80px;
+    background-color: $dynamo-dark-lime;
+    display: block;
+    .profile-float {
+        position: absolute;
+        width: 100%;
+        margin-top: 30px;
+        .profile-img-hold {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid $dynamo-dark-lime;
+            margin: auto;
+            -webkit-transition: all 0.333s;
+            transition: all 0.333s;
+            box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0);
+            &:hover {
+              -webkit-transform: translateY(-1px);
+                -moz-transform: translateY(-1px);
+                -ms-transform: translateY(-1px);
+                -o-transform: translateY(-1px);
+                transform: translateY(-1px);
+                box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.2);
+            }
+            .btn-pop-edit {
+                position: absolute;
+                display: block;
+                left: 50%;
+                margin-left: 14px;
+                bottom: 0;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                text-align: center;
+                cursor: pointer;
+                border: 1px solid transparent;
+                padding: 0;
+                font-size: 14px;
+                line-height: 1.42857;
+                -webkit-transition: all 0.1s;
+                transition: all 0.1s;
+                -ms-transform: scale(0);
+                -webkit-transform: scale(0);
+                transform: scale(0);
+                > .glyphicon {
+                    position: relative;
+                    top: 1px;
+                    left: 1px;
+                }
+            }
+            &:hover .btn-pop-edit {
+                -ms-transform: scale(1);
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+/*
+    Inputs - Global element
+    Input styling over and above bootstraps core
+*/
+
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+.field-wrapper {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+label {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: $dynamo-lime;
+  display: block;
+  opacity: 0;
+  font-size: .875em;
+}
+input {
+  &[type="email"]:focus, &[type="number"]:focus, &[type="password"]:focus, &[type="search"]:focus, &[type="tel"]:focus, &[type="text"]:focus, &[type="url"]:focus, &[type="color"]:focus, &[type="date"]:focus, &[type="datetime"]:focus, &[type="datetime-local"]:focus, &[type="month"]:focus, &[type="time"]:focus, &[type="week"]:focus {
+    border-color: $dynamo-lime;
+    padding-top: 18px;
+    outline: none;
+  }
+}
+textarea:focus {
+  border-color: $dynamo-lime;
+  padding-top: 18px;
+  outline: none;
+}
+input {
+  &[type="email"]:focus + label, &[type="number"]:focus + label, &[type="password"]:focus + label, &[type="search"]:focus + label, &[type="tel"]:focus + label, &[type="text"]:focus + label, &[type="url"]:focus + label, &[type="color"]:focus + label, &[type="date"]:focus + label, &[type="datetime"]:focus + label, &[type="datetime-local"]:focus + label, &[type="month"]:focus + label, &[type="time"]:focus + label, &[type="week"]:focus + label {
+    opacity: 1 !important;
+    top: 6px !important;
+  }
+}
+textarea:focus + label {
+  opacity: 1 !important;
+  top: 6px !important;
+}
+input {
+  &[type="email"], &[type="number"], &[type="password"], &[type="search"], &[type="tel"], &[type="text"], &[type="url"], &[type="color"], &[type="date"], &[type="datetime"], &[type="datetime-local"], &[type="month"], &[type="time"], &[type="week"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 54px;
+    -webkit-transition: border-color,0.333s;
+    transition: border-color,0.333s;
+    background-color: #ffffff;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 0 20px;
+  }
+}
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 54px;
+  -webkit-transition: border-color,0.333s;
+  transition: border-color,0.333s;
+  background-color: #ffffff;
+  border: 1px solid #e3e3e3;
+  border-radius: 5px;
+  padding: 0 20px;
+}
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; }
+
+textarea:hover, 
+input:hover, 
+textarea:active, 
+input:active, 
+textarea:focus, 
+input:focus,
+button:focus,
+button:active,
+button:hover
+{
+    outline:0px !important;
+    -webkit-appearance:none;
+}
+
+
+
+
+
