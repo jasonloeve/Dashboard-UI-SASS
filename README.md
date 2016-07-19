@@ -7,7 +7,7 @@ Dashboard UI build for harvest api on Bootstraps framework using sass (front-end
 
 # What it looks like
 
-![Harvest Dashboard UI](https://cloud.githubusercontent.com/assets/1393754/16937130/93c91258-4d6c-11e6-9540-57d4f3c75efd.png)
+![Harvest Dashboard UI](https://cloud.githubusercontent.com/assets/1393754/16937207/33407a06-4d6d-11e6-9952-a496923eb20f.png)
 
 # TODO
 
